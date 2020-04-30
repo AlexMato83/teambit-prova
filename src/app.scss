@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Baloo Bhaina 2', cursive;
-
+  color:#58402c;
 }
 // variabili
 $border: 2px solid black;
@@ -51,6 +51,32 @@ header {
 main {
   height: 100%;
 }
+.content{
+  h1{
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  h3{
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-weight: 400;
+  }
+
+}
+
+@mixin button{
+  width:180px;
+  height: 40px;
+  background: #30488f;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color:white;
+  text-decoration: none;
+}
 @mixin sec-1-footer {
   background: white;
   height:600px;
@@ -67,16 +93,21 @@ main {
   text-align: center;
 
 }
-@mixin sec-4-6 {
-  background: white;
-  margin:50px 200px 50px 50px;
-  height: 700px;
+
+.content-ahref {
+
+  width: 80%;
+  display: flex;
+  align-items: center;
+  a {
+  @include button;
+  margin-right: 15px;
+    + p + a{
+      margin-left: 15px;
+    }
+  }
 }
-@mixin sec-5-7 {
-  background: white;
-  margin:50px 50px 200px 50px;
-  height: 700px;
-}
+
 main {
   #sec1{
     @include sec-1-footer;
@@ -96,13 +127,25 @@ main {
       height: 100%;
     }
   }
+  #sec2{
+    position: relative;
+    &:before {
+      content : "";
+      position: absolute;
+      left    : 15%;
+      bottom  : 0;
+      height  : 1px;
+      width   : 70%;  /* or 100px */
+      border-bottom:1px solid grey;
+    }
+  }
   #sec2,#sec3,#sec8 {
     @include sec-2-3-8;
     .sec2-img {
       display: flex;
       justify-content: center;
       img{
-        width: 50%;
+        width: 40%;
         height: 100%;
       }
     }
@@ -125,6 +168,50 @@ main {
       }
     }
     }
+
+
+}
+// mixin testo sezione 4 5 6 7
+@mixin sec4-5-6-7{
+  background: white;
+  margin:50px 200px 50px 50px;
+  height: 700px;
+   > img {
+    width: 50%;
+    height: 100%;
+    background: red;
+  }
+  .sec4-text{
+    width: 50%;
+    height: 100%;
+    h2{
+     font-size: 28px;
+     font-weight: 600;
+     margin-bottom: 5px;
+     }
+
+    h4{
+      font-size: 23px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+    a {
+      color:#30488F;
+      font-size: 23px;
+      text-decoration: none;
+    }
+  }
+}
+
+#sec5 img,#sec7 img {
+  order:2;
+}
+#sec4,#sec5,#sec6,#sec7{
+  display: flex;
+  @include sec4-5-6-7;
+}
+// mixin images 4 and 6
+@mixin sec4-6-img{
 
 }
 footer{

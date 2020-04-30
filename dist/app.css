@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baloo Bhaina 2", cursive;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  padding: 0 15%;
+  border-bottom: 1px solid grey;
+  height: 100px;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+}
+
+.logo {
+  width: 10%;
+  height: 50%;
+  border: 2px solid black;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.header-search {
+  width: 45%;
+  height: 50%;
+}
+
+.header-search ul {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  list-style-type: none;
+}
+
+.header-search ul li {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  height: 100%;
+}
+
+main #sec1 {
+  background: white;
+  height: 600px;
+  width: 100%;
+  padding: 50px 100px;
+  margin-top: 100px;
+  padding: 50px 15%;
+  display: flex;
+}
+
+main #sec1 .content {
+  width: 50%;
+  height: 100%;
+}
+
+main #sec1 .jumbo {
+  width: 50%;
+  height: 100%;
+}
+
+main #sec1 img {
+  width: 100%;
+  height: 100%;
+}
+
+main #sec2,
+main #sec3,
+main #sec8 {
+  background: #ffe7d2;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 3% 25%;
+  text-align: center;
+}
+
+main #sec2 .sec2-img,
+main #sec3 .sec2-img,
+main #sec8 .sec2-img {
+  display: flex;
+  justify-content: center;
+}
+
+main #sec2 .sec2-img img,
+main #sec3 .sec2-img img,
+main #sec8 .sec2-img img {
+  width: 50%;
+  height: 100%;
+}
+
+main #sec2 > div,
+main #sec3 > div,
+main #sec8 > div {
+  height: 35%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+main #sec2 > div > div,
+main #sec3 > div > div,
+main #sec8 > div > div {
+  height: 100%;
+  width: 30%;
+}
+
+main #sec2 > div > div:nth-child(3) img,
+main #sec3 > div > div:nth-child(3) img,
+main #sec8 > div > div:nth-child(3) img {
+  width: 50%;
+}
+
+main #sec2 > div > div img,
+main #sec3 > div > div img,
+main #sec8 > div > div img {
+  height: 60%;
+  width: 100%;
+}
+
+footer {
+  background: black;
+  height: 500px;
+}
+

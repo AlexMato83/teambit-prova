@@ -100,13 +100,10 @@ $(document).ready(function () {
     var scrollTop = $(this).scrollTop();
     console.log("sto scrollando", scrollTop);
 
-    if (scrollTop > 140) {
-      // $( "#book" ).slideDown( "slow", function())
-      $("#header2").show();
-      $("#header2").slideDown("slow");
+    if (scrollTop > 240) {
+      $("#header2").slideDown();
     } else {
-      $("header").show();
-      $("#header2").hide();
+      $("#header2").slideUp();
     }
   });
 

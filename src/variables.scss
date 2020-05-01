@@ -40,13 +40,14 @@
         &:nth-child(5){
           @include button;
 
-          width: 80px;
+          width: 100px;
           height: 40px;
           background: white;
           border:1px solid #30488f;
           color: #30488f;
           img {
             width:20px;
+            margin-right: 5px;
           }
         }
       }
@@ -62,7 +63,7 @@
   margin:50px 200px 50px 50px;
   height: 700px;
    > img {
-     width: 57%;
+     width: 65%;
      height: 80%;
   }
   .sec4-text{

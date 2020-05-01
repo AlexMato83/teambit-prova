@@ -10,6 +10,7 @@ $(document).ready(function() {
     console.log("sto scrollando", scrollTop);
 
     if (scrollTop > 240) {
+      
 
       $("#header2").slideDown();
 

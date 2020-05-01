@@ -18,6 +18,7 @@
   justify-content: space-between;
   align-items: center;
   background: white;
+  height: 80px;
 }
 
 #header2 .logo {
@@ -65,7 +66,7 @@
   border-radius: 10px;
   color: white;
   text-decoration: none;
-  width: 80px;
+  width: 100px;
   height: 40px;
   background: white;
   border: 1px solid #30488f;
@@ -74,6 +75,17 @@
 
 #header2 .header-search ul li:nth-child(5) img {
   width: 20px;
+  margin-right: 5px;
+}
+
+#header2 .header-search ul li:nth-child(5) {
+  background: #30488f;
+  color: white;
+}
+
+#header2 .header-search ul li:nth-child(5) img {
+  -webkit-filter: brightness(10000%);
+          filter: brightness(10000%);
 }
 
 header {
@@ -89,6 +101,7 @@ header {
   align-items: center;
   background: white;
   position: relative;
+  height: 80px;
   border: none;
 }
 
@@ -137,7 +150,7 @@ header .header-search ul li:nth-child(5) {
   border-radius: 10px;
   color: white;
   text-decoration: none;
-  width: 80px;
+  width: 100px;
   height: 40px;
   background: white;
   border: 1px solid #30488f;
@@ -146,6 +159,7 @@ header .header-search ul li:nth-child(5) {
 
 header .header-search ul li:nth-child(5) img {
   width: 20px;
+  margin-right: 5px;
 }
 
 header:before {
@@ -323,7 +337,7 @@ main #sec8 > div > div img {
 #sec5 > img,
 #sec6 > img,
 #sec7 > img {
-  width: 57%;
+  width: 65%;
   height: 80%;
 }
 
@@ -411,6 +425,7 @@ main #sec8 > div > div img {
 
 #sec8 > div:nth-child(2) > div > div:nth-child(2) p:nth-child(1) {
   color: #30488f;
+  height: 18px;
 }
 
 #sec8 .sec8-button {

@@ -9,13 +9,26 @@
 // inizio header hide
 #header2 {
   @include bothHeader;
+  height: 80px;
+  .header-search ul li:nth-child(5){
+    background:#30488f;
+    color: white;
+    img {
+      filter:brightness(10000%);
+
+    }
+  }
 }
+
+
 // fine header hide
 // inizio header show
 header{
   @include bothHeader;
   position: relative;
+  height: 80px;
   border: none;
+
   &:before {
     content : "";
     position: absolute;
@@ -174,6 +187,7 @@ main {
       > div:nth-child(2){
         p:nth-child(1){
           color:#30488f;
+          height: 18px;
         }
 
       }

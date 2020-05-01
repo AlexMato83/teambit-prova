@@ -6,61 +6,27 @@
   color:#58402c;
 }
 @import "variables";
-
-// variabili
-
-
-header {
-  position: fixed;
-  top:0;
-  padding:0 15%;
-  border-bottom: 1px solid grey;
-  height: 100px;
-  width: 100%;
-  z-index: 999;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: white;
+// inizio header hide
+#header2 {
+  @include bothHeader;
 }
-.logo{
-  width: 10%;
-  height: 50%;
-  img{
-    width: 100%;
-    height: 100%;
+// fine header hide
+// inizio header show
+header{
+  @include bothHeader;
+  position: relative;
+  border: none;
+  &:before {
+    content : "";
+    position: absolute;
+    left    : 15%;
+    bottom  : 0;
+    height  : 1px;
+    width   : 70%;  /* or 100px */
+    border-bottom:1px solid grey;
   }
 }
-.header-search{
-  width: 45%;
-  height: 50%;
-  ul{
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
-    list-style-type: none;
-    li{
-      width: 20%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      &:nth-child(5){
-        @include button;
-
-        width: 80px;
-        height: 40px;
-        background: white;
-        border:1px solid #30488f;
-        color: #30488f;
-        img {
-          width:20px;
-        }
-      }
-    }
-  }
-}
+// fine header show
 
 main {
   height: 100%;
